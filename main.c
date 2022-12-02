@@ -57,7 +57,6 @@ int main()
     finish = clock();                     //停止計時
     interval = (double)(finish - start) / CLOCKS_PER_SEC;
     printf("huffman : time %f s\n", interval);
-    int x;
     fclose(in);
     fclose(out_huffman);
     /*
