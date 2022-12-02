@@ -24,9 +24,9 @@ static const arcd_char_t EOS = 1 << (8 * sizeof(symbol_t));
 
 int main()
 {
-    FILE *in = fopen("testdata", "rb");
-    FILE *out_arcd = fopen("output_arcd", "wb");
-    FILE *out_huffman = fopen("output_huffman", "wb");
+    FILE *in = fopen("test/testdata", "rb");
+    FILE *out_arcd = fopen("output/output_arcd", "wb");
+    FILE *out_huffman = fopen("output/output_huffman", "wb");
     time_t start, finish;
     double interval = 0;
     adaptive_model model;
@@ -51,7 +51,7 @@ int main()
     fclose(in);
     fclose(out_arcd);
 
-    in = fopen("testdata", "rb");
+    in = fopen("test/testdata", "rb");
     start = clock();                      //開始計時
     huffman_encode_file(in, out_huffman); //開始壓縮
     finish = clock();                     //停止計時
