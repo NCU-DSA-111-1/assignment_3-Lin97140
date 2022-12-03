@@ -16,6 +16,7 @@ linux
     stat output_huffman //huffman
 ## 程式執行結果
 將兩者執行時間分別印出，單位為秒
-顯示結果如下
+
+顯示結果如下\n
 arcd : time = 0.000098 s
 huffman : time 0.000185 s
