@@ -20,4 +20,5 @@ linux
 顯示結果如下
 
 arcd : time = 0.000098 s
+
 huffman : time 0.000185 s
