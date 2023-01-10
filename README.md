@@ -3,9 +3,9 @@ arithmetic code 和 huffman code 兩種壓縮演算法比較
 ## os
 linux 
 ## bulid
-    make 
+    cc -o main src/main.c src/huffman.c src/arcd.c src/adaptive_model.c -I ./inc 
 ## run
-    make run
+    ./main
 ## 測試資料
 測試資料為 test/testdata 
 ## 壓縮結果
@@ -14,11 +14,4 @@ linux
     cd output
     stat output_srcd    //arthimetic 
     stat output_huffman //huffman
-## 程式執行結果
-將兩者執行時間分別印出，單位為秒
 
-顯示結果如下
-
-arcd : time = 0.000098 s
-
-huffman : time 0.000185 s
