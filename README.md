@@ -12,6 +12,6 @@ linux
 壓縮結果檔案儲存於output
 ## 查看壓縮後檔案大小
     cd output
-    stat output_srcd    //arthimetic 
+    stat output_arcd    //arthimetic 
     stat output_huffman //huffman
 
